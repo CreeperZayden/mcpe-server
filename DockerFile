@@ -1,9 +1,11 @@
 FROM itzg/minecraft-bedrock-server
 
+# Set environment variables for Minecraft Bedrock 1.21.60
+ENV VERSION=1.21.60.10
 ENV EULA=TRUE
+ENV SERVER_NAME="Render Bedrock 1.21.60"
 ENV GAMEMODE=survival
 ENV DIFFICULTY=normal
-ENV SERVER_NAME="My Render Server"
 
 VOLUME /data
 EXPOSE 19132/udp
